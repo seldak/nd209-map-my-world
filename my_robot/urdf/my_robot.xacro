@@ -4,6 +4,14 @@
 
   <xacro:include filename="$(find my_robot)/urdf/my_robot.gazebo" />
 
+  <material name="indigo">
+    <color rgba="0.29 0 0.51 1"/>
+  </material>
+
+  <material name="red">
+    <color rgba="0.8 0 0 1"/>
+  </material>
+
   <link name="robot_footprint"></link>
 
   <joint name="robot_footprint_joint" type="fixed">
@@ -37,6 +45,7 @@
       <geometry>
         <box size=".4 .2 .1"/>
       </geometry>
+      <material name="indigo"/>
     </visual>
 
 
@@ -92,6 +101,7 @@
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
       </geometry>
+      <material name="red"/>
     </visual>
   </link>
 
@@ -126,6 +136,7 @@
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
       </geometry>
+      <material name="red"/>
     </visual>
   </link>
 
