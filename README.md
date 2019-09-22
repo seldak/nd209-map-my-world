@@ -1,5 +1,5 @@
-# nd209-go-chase-it
-This is a ROS project, part of the Udacity Robotics Nanodegree program.
+# nd209-where-am-i
+This is a ROS project, part of the Udacity Robotics Nanodegree program. This was developed under ROS Kinetic.
 
 # Build
 Go to your catkin workspace:
@@ -7,7 +7,11 @@ Go to your catkin workspace:
 cd /path/to/catkin_ws
 ```
 Clone the repository and run
-`catkin_make`
+```
+git submodule init
+git submodule update
+catkin_make
+```
 
 # Run
 After building, launch Gazebo and Rviz:
