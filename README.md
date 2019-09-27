@@ -18,8 +18,10 @@ After building, launch Gazebo and Rviz:
 ```
 roslaunch my_robot world.launch
 ```
-And to run the chaser nodes, run:
+Launch the adaptive Monte Carlo Localization node:
 ```
-roslaunch ball_chaser ball_chaser.launch
+roslaunch my_robot amcl.launch
 ```
-Select the white ball outside the world, and place infront of the robot. The robot should drive towards the ball.
+Then launch the teleop twist keyboard script to navigate.
+
+[Screenshot](screenshot.gif)
