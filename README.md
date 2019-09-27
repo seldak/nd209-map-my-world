@@ -23,5 +23,8 @@ Launch the adaptive Monte Carlo Localization node:
 roslaunch my_robot amcl.launch
 ```
 Then launch the teleop twist keyboard script to navigate.
+```
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
 
-[Screenshot](screenshot.gif)
+![](screenshot.gif)
