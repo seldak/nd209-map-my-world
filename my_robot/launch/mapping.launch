@@ -25,6 +25,8 @@
       <remap from="depth/image" to="$(arg depth_topic)"/>
       <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/>
 
+      <param name="queue_size" value="100"/>
+
       <!-- RTAB-Map Output -->
       <remap from="grid_map" to="/map"/>
 
